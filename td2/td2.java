@@ -1,4 +1,4 @@
-QUESTAO 1
+//QUESTAO 1
 
 import java.util.Scanner;
 public class Main {
@@ -47,7 +47,7 @@ public class Main {
 }
 
 
-QUESTAO 2 
+//QUESTAO 2 
 
 import java.util.Scanner;
 public class Main {
@@ -85,7 +85,7 @@ public class Main {
 }
 
 
-QUESTAO 3
+//QUESTAO 3
 
 import java.util.Scanner;
 import java.util.Random;
@@ -115,7 +115,7 @@ public class Main {
 }
 
 
-QUESTAO 4
+//QUESTAO 4
 
 import java.util.Scanner;
 public class Main {
@@ -136,7 +136,7 @@ public class Main {
 }
 
 
-QUESTAO 5
+//QUESTAO 5
 
 import java.util.Scanner;
 public class Main {
@@ -175,7 +175,7 @@ public class Main {
 }
 
 
-QUESTAO 6
+//QUESTAO 6
 
 import java.util.Scanner;
 public class Main {
