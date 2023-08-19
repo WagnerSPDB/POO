@@ -38,7 +38,7 @@ public class Programador extends Funcionario{
 				cont++;
 			}
 			if(cont == 5) {
-				System.out.println("O funcion·rio "+this.getNome()+"e o funcionario "+vet[x].getNome()+" programam as mesmas linguagens!");
+				System.out.println("O funcion√°rio "+this.getNome()+"e o funcionario "+vet[x].getNome()+" programam as mesmas linguagens!");
 			}
 		}
 	}
