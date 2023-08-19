@@ -29,7 +29,7 @@ int FazerPares(int n, Botas pares[]){
         scanf(" %c", &pares[i].lado);
     }
     if(AvaliarBotas(n, pares) != n){
-        printf("Alguma informação não está cumprindo as seguintes restrições: '2<=N<=10000, N é par, 30<=M<=60, L pertence a {D, E}'. Por favor tente novamente digitando dados válidos!");
+        printf("Alguma informaÃ§Ã£o nÃ£o estÃ¡ cumprindo as seguintes restriÃ§Ãµes: '2<=N<=10000, N Ã© par, 30<=M<=60, L pertence a {D, E}'. Por favor tente novamente digitando dados vÃ¡lidos!");
     }else{
         int cont = 0;
         for(int i = 0; i < n; i++){
@@ -41,7 +41,7 @@ int FazerPares(int n, Botas pares[]){
                 }
             }
         }
-        printf("o numero de pares é: %i", cont);
+        printf("o numero de pares Ã©: %i", cont);
     }
 }
 
