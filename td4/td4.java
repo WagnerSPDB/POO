@@ -1,4 +1,3 @@
-package teste;
 
 import empresa.Funcionario;
 import empresa.OperacaoFuncionario;
