@@ -23,11 +23,11 @@ public class Main {
 		String z;
 		float resultado = 0;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Digite o primeiro número: ");
+		System.out.println("Digite o primeiro nÃºmero: ");
 		x = scan.nextFloat();
-		System.out.println("Digite o segundo número: ");
+		System.out.println("Digite o segundo nÃºmero: ");
 		y = scan.nextFloat();
-		System.out.println("Digite o símbolo da operação desejada: Soma + ; Subtração - ; Multiplicação * ; Divisão /.");
+		System.out.println("Digite o sÃ­mbolo da operaÃ§Ã£o desejada: Soma + ; SubtraÃ§Ã£o - ; MultiplicaÃ§Ã£o * ; DivisÃ£o /.");
 		z = scan.next();
 		if (z.equals("+")) {
 			resultado = soma(x, y);
@@ -38,10 +38,10 @@ public class Main {
 		} else if (z.equals("/") && y!=0) {
 			resultado = div(x, y);
 		} else {
-			System.out.println("Código inválido!");
+			System.out.println("CÃ³digo invÃ¡lido!");
 			System.exit(0);
 		}
-		System.out.println("O resultado é: " +resultado);
+		System.out.println("O resultado Ã©: " +resultado);
 
 	}
 }
@@ -97,7 +97,7 @@ public class Main {
 		System.out.print("Digite o tamanho desejado para o vetor: ");
 		n = scan.nextInt();
 		if(n <= 0){
-		    System.out.println("Tamanho do vetor inválido!");
+		    System.out.println("Tamanho do vetor invÃ¡lido!");
 		    System.exit(0);
 		}
 		int[] vet = new int[n];
@@ -110,7 +110,7 @@ public class Main {
 			    maior = vet[i];
 			}
 		}
-		System.out.println("\nO maior elemento do vetor é: "+maior);
+		System.out.println("\nO maior elemento do vetor Ã©: "+maior);
 	}
 }
 
@@ -128,7 +128,7 @@ public class Main {
 	    	senha = scan.nextLine();
 	    	resultado = senha.compareTo("a76dk09");
 	    	if (resultado != 0){
-	       		System.out.println("SENHA INVÁLIDA\n");
+	       		System.out.println("SENHA INVÃLIDA\n");
 	    	} 
 	    }while(resultado != 0);
 	    System.out.println("ACESSO PERMITIDO");
@@ -166,11 +166,11 @@ public class Main {
 	    n = scan.nextInt();
 	    float[] vet = new float[n];
 	    for(int i = 0; i < vet.length; i++){
-	        System.out.println("Digite a posição "+i+" do vetor: ");
+	        System.out.println("Digite a posiÃ§Ã£o "+i+" do vetor: ");
 	        vet[i] = scan.nextFloat();
 	    }
-	    System.out.println("A média é: "+media(vet, n));
-	    System.out.println("O desvio padrão é: "+desvio(vet, n));
+	    System.out.println("A mÃ©dia Ã©: "+media(vet, n));
+	    System.out.println("O desvio padrÃ£o Ã©: "+desvio(vet, n));
 	}
 }
 
@@ -189,19 +189,15 @@ public class Main {
 		m2 = scan.nextInt();
 		if(h1 >= 0 && h1 <= 23 && m1 >= 0 && m1 <= 59 && h2 >= 0 && h2 <= 23 && m2 >= 0 && m2 <= 59) {
 			if(h1 == h2 && m1 > m2) {
-				System.out.println("BORA FI DO BILL");
 				dh = 23 * 60;
 				dm = (60 - m1) + m2;
 			}else if(h1 <= h2 && m1 <= m2) {
-				System.out.println("Entrei aqui po");
 				dh = (h2 - h1) * 60;
 				dm = (m2 - m1);
 			}else if(h1 <= h2 && m1 >= m2) {
-				System.out.println("Agora foi nesse");
 				dh = (h2 - h1) * 60;
 				dm = (60 - m1) + m2;
 			}else if(h1 >= h2 && m1 <= m2) {
-				System.out.println("Vacilou, eu  mudei");
 				dh = ((23 - h1) + h2) * 60;
 				dm = (m2 - m1);
 			}else if(h1 >= h2 && m1 >= m2) {
