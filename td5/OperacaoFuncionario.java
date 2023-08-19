@@ -8,9 +8,9 @@ public class OperacaoFuncionario {
 	public static void ValidaFuncionario(Funcionario vet[], Calendar hoje) {
 		for(int i = 0; i < vet.length; i++) {
 			if(vet[i].ValidaNascimento(vet) + vet[i].ValidaAdmissao(vet, hoje) + vet[i].ValidaCpf(vet) == 3) {
-				System.out.println("Dados do funcionário "+vet[i].getNome()+" válidos!");
+				System.out.println("Dados do funcionÃ¡rio "+vet[i].getNome()+" vÃ¡lidos!");
 			} else {
-				System.out.println("Dados do funcionário "+vet[i].getNome()+" inválidos.");			}
+				System.out.println("Dados do funcionÃ¡rio "+vet[i].getNome()+" invÃ¡lidos.");			}
 		}
 	}
 	
@@ -23,7 +23,7 @@ public class OperacaoFuncionario {
 				contF++;
 			}
 		}
-		System.out.println("\nHá "+contM+" funcionários homens e "+contF+" funcionárias mulheres!");
+		System.out.println("\nHÃ¡ "+contM+" funcionÃ¡rios homens e "+contF+" funcionÃ¡rias mulheres!");
 	}
 	
 	public static void MaiorMenorSalario(Funcionario vet[]) {
@@ -40,7 +40,7 @@ public class OperacaoFuncionario {
 				menorSalario = vet[i].getNome();
 			}
 		}
-		System.out.println("\nO maior salário liquido é de "+maiorSalario+" e o menor salário liquido é de "+menorSalario);
+		System.out.println("\nO maior salÃ¡rio liquido Ã© de "+maiorSalario+" e o menor salÃ¡rio liquido Ã© de "+menorSalario);
 	}
 	
 	public static void MaisVelhoNovo(Funcionario vet[], Calendar hoje) {
@@ -56,7 +56,7 @@ public class OperacaoFuncionario {
 				nomeVelho = vet[i].getNome();
 			}
 		}
-		System.out.println("O funcionário mais velho é o "+nomeVelho+" com "+velho+" anos. E o funcionário mais novo é o "+nomeNovo+" com "+novo+" anos.");
+		System.out.println("O funcionÃ¡rio mais velho Ã© o "+nomeVelho+" com "+velho+" anos. E o funcionÃ¡rio mais novo Ã© o "+nomeNovo+" com "+novo+" anos.");
 	}
 	
 	
@@ -65,7 +65,7 @@ public class OperacaoFuncionario {
 		for(int i = 0; i < vet.length; i++) {
 			total += vet[i].getBonificacao(vet);
 		}
-		System.out.println("Soma das bonificações de todos os funcionarios: "+total);
+		System.out.println("Soma das bonificaÃ§Ãµes de todos os funcionarios: "+total);
 	}
 	
 	public static void AposentaFuncionarios(Funcionario vet[], Calendar hoje) {
