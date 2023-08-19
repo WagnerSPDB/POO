@@ -54,30 +54,30 @@ public class Funcionario{
 		
 		int ValidaCpf(Funcionario vet[]) {
 				if(this.cpf.length() == 14) {
-					System.out.println("CPF do funcion·rio "+this.getNome()+" v·lido!");
+					System.out.println("CPF do funcion√°rio "+this.getNome()+" v√°lido!");
 					return 1;
 				} else {
-					System.out.println("CPF do funcion·rio "+this.getNome()+" inv·lido.");
+					System.out.println("CPF do funcion√°rio "+this.getNome()+" inv√°lido.");
 					return 0;
 				}
 		}
 		
 		public int ValidaNascimento(Funcionario vet[]) {
 				if(this.ano < 1920) {
-					System.out.println("\nData de nascimento do funcion·rio "+this.getNome()+" inv·lida.");
+					System.out.println("\nData de nascimento do funcion√°rio "+this.getNome()+" inv√°lida.");
 					return 0;
 				} else {
-					System.out.println("\nData de nascimento do funcion·rio "+this.getNome()+" v·lida!");
+					System.out.println("\nData de nascimento do funcion√°rio "+this.getNome()+" v√°lida!");
 					return 1;
 				}
 		}
 		
 		public int ValidaAdmissao(Funcionario vet[], Calendar hoje) {
 			if(hoje.get(Calendar.YEAR) < 1995) {
-				System.out.println("Data de admiss„o inv·lida.");
+				System.out.println("Data de admiss√£o inv√°lida.");
 				return 0;
 			} else {
-				System.out.println("Data de admiss„o v·lida!");
+				System.out.println("Data de admiss√£o v√°lida!");
 				return 1;
 			}
 		}
@@ -113,7 +113,7 @@ public class Funcionario{
 		public double getBonificacao(Funcionario vet[]) {
 			double bonificacao = (this.salarioBruto * 12);
 			bonificacao = bonificacao * 0.02;
-			System.out.println("A bonificaÁ„o do funcionario "+this.getNome()+" È "+bonificacao);
+			System.out.println("A bonifica√ß√£o do funcionario "+this.getNome()+" √© "+bonificacao);
 			return bonificacao;
 		}
 		
@@ -124,14 +124,14 @@ public class Funcionario{
 			} else if(this.sexo == 'f' || this.sexo =='F') {
 				anoAposenta = hoje.get(Calendar.YEAR) + 30;
 			}
-			System.out.println("Data de Aposentadoria prevista do funcion·rio " +this.getNome()+ ": "+hoje.get(Calendar.DAY_OF_MONTH)+"/"+hoje.get(Calendar.MONTH)+"/"+anoAposenta);
+			System.out.println("Data de Aposentadoria prevista do funcion√°rio " +this.getNome()+ ": "+hoje.get(Calendar.DAY_OF_MONTH)+"/"+hoje.get(Calendar.MONTH)+"/"+anoAposenta);
 		}
 		
 		public void eMaisVelho(Funcionario vet[], int x, Calendar hoje) {
 			if(vet[x].CalculaIdade(vet, hoje) > this.CalculaIdade(vet, hoje)){
-				System.out.println(vet[x].getNome()+" È mais velho do que "+this.getNome());
+				System.out.println(vet[x].getNome()+" √© mais velho do que "+this.getNome());
 			} else if (vet[x].CalculaIdade(vet, hoje) < this.CalculaIdade(vet, hoje)) {
-				System.out.println(this.getNome()+" È mais velho do que "+vet[x].getNome());
+				System.out.println(this.getNome()+" √© mais velho do que "+vet[x].getNome());
 			}
 		}
 	
