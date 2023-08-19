@@ -1,0 +1,54 @@
+1) Eis informações da planilha Excel de um usuário
+que controla os gastos mensais com sua conta de luz.
+Para cada conta de luz cadastra-se: código da conta,
+data em que a leitura do relógio de luz foi realizada,
+quantidade de Kw gasto no mês, valor a pagar pela
+conta, data do vencimento, se foi pago ou não e data
+do pagamento.
+Crie uma classe ContaLuz abstraindo o contexto
+acima e no método main de outra classe,
+denominada App, crie um vetor de n objetos
+ContaLuz e imprima: as informações da cada conta;
+o mês de maior e menor consumo; media de
+consumo de todas as contas; quais contas não foram
+pagas; quais contas foram pagas antes ou até o
+vencimento; quais contas foram pagas depois do
+vencimento.
+
+
+
+2) Um usuário tem uma coleção grande de DVD's
+musicais e gostaria de cadastrar no seu smartphone a
+lista desses DVD's, pois às vezes nem sabe o que
+tem. Para o cadastro de DVD's é importante os
+dados referentes ao Autor, o título do DVD, o
+código do DVD, o ano de lançamento, gênero
+musical, valor pago e a gravadora. É valido ressaltar
+que todo DVD está relacionado a um Autor (Músico
+ou Grupo Musical). Isso cria um relacionamento de
+composição entre a classe DVD e a classe Autor. Ou
+seja, há uma atributo em DVD do tipo Autor. São
+dados importantes para um Autor: nome; atua
+solo(carreira solo).
+Em main de uma classe App, crie um vetor de n
+objetos DVD e imprima: as informações da cada
+DVD; o ano com mais lançamentos de DVD's; o
+DVD's mais caro e e o mais barato; O valor total de
+todos os DVD's; O genêro musical preferido do
+usuário; quais DVD's são de autor solo.
+
+
+
+3) É necessária a criação de uma aplicação de
+agenda telefônica básica. A classe Agenda possuí
+um vetor de Contatos. Cada Contato possuí um
+nome, um telefone e um email. Portanto, a classe
+Agenda deve ser inicializada com um vetor de
+objetos do tipo Contato e esta mesma classe Agenda
+deve possuir métodos para inserir, atualizar, deletar
+e pesquisar contatos. Como estes métodos
+funcionarão, fica a cargo do programador. O limite
+máximo da agenda é 100 contatos, portanto o vetor
+de Contatos tem tamanho 100.
+Criadas as classes Contato e Agenda, teste-as no
+método main de uma classe App. 
