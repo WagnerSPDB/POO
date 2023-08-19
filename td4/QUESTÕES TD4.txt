@@ -1,0 +1,98 @@
+FUNCIONÁRIO - EMPRESA
+Fazer um programa para simular o registro de dados de funcionários de
+uma empresa. De início, crie um pacote empresa. Em seguida, neste
+pacote, criar um classe Funcionario com os seguintes dados:
+- CPF: java.lang.String
+- Nome: java.lang.String
+- Sexo (M/F): char
+- Salário Bruto: float/double
+- Data de Nascimento: java.util.GregorianCalendar
+- Data de Admissão: java.util.GregorianCalendar
+
+São requisitos da classe da funcionário:
+• Implementar três construtores:
+o Um construtor sem parâmetros, a qual inicializa o campo data
+de admissão com a data corrente do seu S.O;
+o Um construtor com os parâmetros cpf, nome e data de
+admissão;
+o Um construtor que inicializa cada campo com um parâmetro.
+
+• Fornecer um método para validar o CPF. Considere um CPF válido,
+se o mesmo tem 14 caracteres;
+
+• Fornecer um método para validar a Data de Nascimento. Considere
+que ninguém nasceu antes de 1920;
+
+• Fornecer um método para validar a Data de Admissão. Considere
+que a empresa foi fundada em 1995;
+
+• Fornecer um método que converte a Data de Nascimento em idade
+no formato int, em seguida retorna a idade;
+
+• Fornecer um método que calcula e retorna o salário liquido de um
+funcionário. Considere que o salário liquido é o resultado de um
+abtimento de 17% do salário bruto caso o salario bruto seja igual ou
+inferior a 3.000,00 e 27% de abatimento caso seja superior a
+3.000,00;
+
+• Forner um método toString para retornar um resumo do objeto no
+formato de String;
+
+• Forner um método equals para operar a igualdade de funcionários.
+(Obs: dois funcionários são iguaus se tiverem o mesmo nome, cpf e
+sexo);
+
+Em seguida, no pacote empresa, implemente uma classe
+OperacaoFuncionario onde:
+
+• Implemente um método estático a qual recebe um array de
+Funcionario e diz quais objetos Funcionario forma possuem dados
+válidos/inválidos;
+
+• Implemente um método estático a qual recebe um array de
+Funcionario e diz quantos funcionários são de sexo masculino ou
+feminino;
+
+• Implemente um método estático a qual recebe um array de
+Funcionario e imprime qual tem o maior salário liquido e qual
+possuí o menor salário liquido;
+
+• Implemente um método estático a qual recebe um array de
+Funcionario e imprime o nome e idade do funcionários mais velho e
+mais novo.
+
+Criar um pacote teste e neste pacote, criar uma classe App. As
+funcionalidades de Funcionario e OperacaoFuncionario devem ser
+testadas no método main de App. Dicas para trabalhar com data em Java:
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class App {
+
+ public static void main(String[] args) {
+
+ //Uma forma para conseguir a data corrente do S.O
+ Calendar c = Calendar.getInstance();
+
+ System.out.println("Data/Hora atual: "+c.getTime());
+ System.out.println("Ano: "+c.get(Calendar.YEAR));
+ System.out.println("Mês: "+c.get(Calendar.MONTH));
+ System.out.println("Dia: "
+ +c.get(Calendar.DAY_OF_MONTH));
+
+ //Uma forma de se trabalhar com datas
+ SimpleDateFormat formatador =
+ new SimpleDateFormat("dd/MM/yyyy");
+ GregorianCalendar data1 = new GregorianCalendar();
+ int ano = 2010;
+ int mes = 0; /** Os mêses irão de 0 a 11*/
+ int dia = 12; /** Os dias devem variar com o mês*/
+ data1.set(ano, mes, dia);
+ String dataEmTexto =
+ formatador.format(data1.getTime());
+ System.out.println(dataEmTexto);
+
+ }
+ }
